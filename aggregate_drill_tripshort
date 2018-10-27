@@ -1,0 +1,15 @@
+-- What's the shortest trip that happened?
+
+SELECT
+    trip_id,
+	start_station,
+	end_station,
+	duration
+FROM
+	trips
+GROUP BY
+	trip_id,
+	start_station,
+	end_station,
+	duration
+ORDER BY duration ASC;
